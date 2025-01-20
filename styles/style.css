@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   margin: 0;
@@ -9,7 +9,7 @@
 }
 
 main > section {
-  max-width: 1160px;
+  /* max-width: 1160px; */
   margin: 100px auto;
 }
 
@@ -163,150 +163,392 @@ main > section {
   width: 100%;
 }
 
-.standard-curriculum-container{
-    width: auto;
-    background: url('../assets/bg.png') no-repeat center center;
-    background-size: cover;
+.standard-curriculum-container {
+  background: url("../assets/bg.png") no-repeat center center;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
-
-.standard-curriculum-allcontainer{
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
+.standard-curriculum-allcontainer {
+  max-width: 1160px;
+  margin: 140px auto;
+  align-items: center;
+  gap: 30px;
 }
-.curriculum-header{
-    color: rgb(0, 0, 0);
-    font-family: Quicksand;
-    font-size: 2.8rem;
-    font-weight: 700;
-    line-height: 3.6rem;
-    letter-spacing: 0%;
-    text-align: center;
-    margin-bottom: 80px;
-}
-
-
-.curriculum1{
-    width: 367.8px;
-    height: 476.78px;
-    box-sizing: border-box;
-    border: 0.94px solid rgb(222, 245, 255);
-    border-radius: 18.86px;
-    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
-    background: linear-gradient(180.00deg, rgb(222, 245, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
-    text-align: center;
+.curriculum-header {
+  color: rgb(0, 0, 0);
+  font-family: Quicksand;
+  font-size: 2.8rem;
+  font-weight: 700;
+  line-height: 3.6rem;
+  letter-spacing: 0%;
+  text-align: center;
 }
 
-.curriculum2{
-    width: 367.8px;
-    height: 476.78px;
-    box-sizing: border-box;
-    border: 0.94px solid rgb(255, 244, 220);
-    border-radius: 18.86px;
-    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
-    background: linear-gradient(180.00deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
-    text-align: center;
+.curriculum1 {
+  width: 367.8px;
+  height: 476.78px;
+  box-sizing: border-box;
+  border: 0.94px solid rgb(222, 245, 255);
+  border-radius: 18.86px;
+  box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+  background: linear-gradient(
+      180deg,
+      rgb(222, 245, 255),
+      rgba(255, 255, 255, 0) 40%
+    ),
+    rgb(255, 255, 255);
+  text-align: center;
 }
 
-.curriculum3{
-    width: 367.8px;
-    height: 476.78px;
-    box-sizing: border-box;
-    border: 0.94px solid rgb(242, 232, 255);
-    border-radius: 18.86px;
-    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
-    background: linear-gradient(180.00deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
-    text-align: center;
+.curriculum2 {
+  width: 367.8px;
+  height: 476.78px;
+  box-sizing: border-box;
+  border: 0.94px solid rgb(255, 244, 220);
+  border-radius: 18.86px;
+  box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+  background: linear-gradient(
+      180deg,
+      rgb(255, 244, 220),
+      rgba(255, 255, 255, 0) 40%
+    ),
+    rgb(255, 255, 255);
+  text-align: center;
 }
 
-.curriculum-image{
-    margin-top: 53px;
-    margin-bottom: 32px;
+.curriculum3 {
+  width: 367.8px;
+  height: 476.78px;
+  box-sizing: border-box;
+  border: 0.94px solid rgb(242, 232, 255);
+  border-radius: 18.86px;
+  box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+  background: linear-gradient(
+      180deg,
+      rgb(238, 225, 255),
+      rgba(255, 255, 255, 0) 40%
+    ),
+    rgb(255, 255, 255);
+  text-align: center;
 }
 
-.curriculum-heading{
-    color: rgb(32, 32, 32);
-    font-family: Quicksand;
-    font-size: 1.5rem;
-    font-weight: 700;
-    line-height: 1.9rem;
-    letter-spacing: 0%;
-    text-align: center;
-    margin-bottom: 33px;
+.curriculum-image {
+  margin-top: 53px;
+  margin-bottom: 32px;
 }
 
-.curriculum-paragraph{
-    color: rgb(128, 128, 128);
-    font-family: Raleway;
-    font-size: 0.95rem;
-    font-weight: 500;
-    line-height: 1.7rem;
-    letter-spacing: 0%;
-    text-align: center;
-    margin-bottom: 38px;
+.curriculum-heading {
+  color: rgb(32, 32, 32);
+  font-family: Quicksand;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.9rem;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 33px;
 }
 
-.curriculum1-span{
-    color: rgb(100, 200, 255);
-    font-family: Quicksand;
-    font-size: 0.943125rem;
-    font-weight: 700;
-    line-height: 1.76875rem;
-    letter-spacing: 0%;
-    text-align: center;
-    margin-bottom: 58px;
+.curriculum-paragraph {
+  color: rgb(128, 128, 128);
+  font-family: Raleway;
+  font-size: 0.95rem;
+  font-weight: 500;
+  line-height: 1.7rem;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 38px;
 }
 
-.curriculum2-span{
-    color: rgb(240, 170, 0);
-    font-family: Quicksand;
-    font-size: 0.943125rem;
-    font-weight: 700;
-    line-height: 1.76875rem;
-    letter-spacing: 0%;
-    text-align: center;
-    margin-bottom: 58px;
-}
-.next-button{
-    gap: 10px;
-    justify-content: center;
-    margin-top: 80px;
-}
-.curriculum3-span{
-    color: rgb(135, 0, 255);
-    font-family: Quicksand;
-    font-size: 0.943125rem;
-    font-weight: 700;
-    line-height: 1.76875rem;
-    letter-spacing: 0%;
-    text-align: center;
-    margin-bottom: 58px;
+.curriculum1-span {
+  color: rgb(100, 200, 255);
+  font-family: Quicksand;
+  font-size: 0.943125rem;
+  font-weight: 700;
+  line-height: 1.76875rem;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 58px;
 }
 
-.arrow-right{
-    width: 60px;
-    height: 60px;
-    border-radius: 30px;
-    background: rgb(254, 163, 1);
+.curriculum2-span {
+  color: rgb(240, 170, 0);
+  font-family: Quicksand;
+  font-size: 0.943125rem;
+  font-weight: 700;
+  line-height: 1.76875rem;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 58px;
+}
+.next-button {
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 60px;
+}
+.curriculum3-span {
+  color: rgb(135, 0, 255);
+  font-family: Quicksand;
+  font-size: 0.943125rem;
+  font-weight: 700;
+  line-height: 1.76875rem;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 58px;
 }
 
-.arrow-left{
-    width: 60px;
-    height: 60px;
-    border-radius: 30px;
-    background: rgb(254, 163, 1);
-}
-.arrow-left img{
-    position: relative;
-    left: 22.5px;
-    top: 17px;
+.arrow-right {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background: rgb(254, 163, 1);
 }
 
-.arrow-right img{
-    position: relative;
-    left: 22.5px;
-    top: 17px;
+.arrow-left {
+  width: 60px;
+  height: 60px;
+  border-radius: 30px;
+  background: rgb(254, 163, 1);
+}
+.arrow-left img {
+  position: relative;
+  left: 22.5px;
+  top: 17px;
+}
+
+.arrow-right img {
+  position: relative;
+  left: 22.5px;
+  top: 17px;
+}
+.stories-container {
+  background: url("../assets/bg.png") no-repeat center center,
+    linear-gradient(0deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.stories-inner-container {
+  max-width: 1160px;
+  margin: 0px auto;
+  text-align: center;
+}
+.stories-header {
+  color: rgb(0, 0, 0);
+  font-family: Quicksand;
+  font-size: 2.875rem;
+  font-weight: 700;
+  line-height: 3.593rem;
+  letter-spacing: 0%;
+  text-align: center;
+  padding-top: 60px;
+  margin-bottom: 80px;
+}
+.stories-container-main {
+  gap: 20px;
+}
+
+.story-big {
+  width: 540.27px;
+  height: 631px;
+  border-radius: 16px;
+  background: rgb(255, 255, 255);
+}
+
+.story-big img {
+  border-radius: 16px 16px 0px 0px;
+}
+#story-big-btn {
+  position: relative;
+  left: -150px;
+  top: -30px;
+
+  width: 174.51px;
+  height: 47.93px;
+  border-radius: 47.93px;
+  border-style: none;
+  background: rgb(60, 216, 232);
+
+  color: rgb(255, 255, 255);
+  font-family: Raleway;
+  font-size: 0.958rem;
+  font-weight: 500;
+  line-height: 1.797rem;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.story-big-header {
+  color: rgb(0, 0, 0);
+  font-family: Quicksand;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2.396rem;
+  letter-spacing: 0%;
+  text-align: left;
+  padding-left: 30px;
+}
+
+.story-big-paragraph {
+  color: rgb(102, 102, 102);
+  font-family: Raleway;
+  font-size: 0.95875rem;
+  font-weight: 500;
+  line-height: 1.7975rem;
+  letter-spacing: 0%;
+  text-align: left;
+  padding-left: 30px;
+  padding-top: 50px;
+}
+.short-story {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+#short-story1 {
+  width: 290.69px;
+  height: 301.61px;
+  border-radius: 16px;
+  background: rgb(255, 255, 255);
+}
+
+#short-story2,
+#short-story3,
+#short-story4 {
+  width: 290.69px;
+  height: 301.61px;
+  border-radius: 16px;
+  background: rgb(255, 255, 255);
+}
+.short-story1,
+.short-story2,
+.short-story3,
+.short-story4,
+img {
+  border-radius: 16px 16px 0px 0px;
+}
+
+#short-story-btn1 {
+  position: relative;
+  left: -20px;
+  bottom: 25px;
+  width: 174px;
+  height: 38px;
+  border-radius: 47.93px;
+  border-style: none;
+  background: rgb(149, 178, 38);
+
+  color: rgb(255, 255, 255);
+  font-family: Raleway;
+  font-size: 0.9587rem;
+  font-weight: 500;
+  line-height: 1.7975rem;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+#short-story-btn2 {
+  position: relative;
+  left: -20px;
+  bottom: 25px;
+  width: 174px;
+  height: 38px;
+  border-radius: 47.93px;
+  border-style: none;
+  background: rgb(149, 178, 38);
+
+  color: rgb(255, 255, 255);
+  font-family: Raleway;
+  font-size: 0.9587rem;
+  font-weight: 500;
+  line-height: 1.7975rem;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+#short-story-btn2 {
+  position: relative;
+  left: -20px;
+  bottom: 25px;
+  width: 174px;
+  height: 38px;
+  border-radius: 47.93px;
+  border-style: none;
+  background: rgb(93, 88, 240);
+
+  color: rgb(255, 255, 255);
+  font-family: Raleway;
+  font-size: 0.9587rem;
+  font-weight: 500;
+  line-height: 1.7975rem;
+  letter-spacing: 0%;
+  text-align: center;
+  text-transform: capitalize;
+}
+.short-story-paragraph1 {
+  color: rgb(0, 0, 0);
+  font-family: Quicksand;
+  font-size: 0.95875rem;
+  font-weight: 700;
+  line-height: 1.797rem;
+  letter-spacing: 0%;
+  text-align: left;
+  padding-left: 40px;
+}
+
+.short-story-paragraph2 {
+  color: rgb(0, 0, 0);
+  font-family: Quicksand;
+  font-size: 0.95875rem;
+  font-weight: 700;
+  line-height: 1.797rem;
+  letter-spacing: 0%;
+  text-align: left;
+  padding-left: 40px;
+  padding-right: 60px;
+}
+
+.short-story-paragraph3 {
+  color: rgb(0, 0, 0);
+  font-family: Quicksand;
+  font-size: 0.95875rem;
+  font-weight: 700;
+  line-height: 1.797rem;
+  letter-spacing: 0%;
+  text-align: left;
+  padding-left: 40px;
+  padding-right: 60px;
+}
+
+.short-story-paragraph4 {
+  color: rgb(0, 0, 0);
+  font-family: Quicksand;
+  font-size: 0.95875rem;
+  font-weight: 700;
+  line-height: 1.797rem;
+  letter-spacing: 0%;
+  text-align: left;
+  padding-left: 40px;
+  padding-right: 80px;
+}
+
+.btn-view {
+  width: 161.05px;
+  height: 47.93px;
+  border-radius: 12px;
+  background: rgb(17, 17, 17);
+
+  color: rgb(255, 255, 255);
+  font-family: Quicksand;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.8rem;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 60px;
 }
 .hide {
   display: none;
@@ -315,7 +557,8 @@ main > section {
   .nav-link,
   .btn-contact,
   .navbar-header,
-  .next-button {
+  .next-button,
+  .story-big {
     display: none;
   }
   .hamburger-icon {
@@ -335,7 +578,7 @@ main > section {
     justify-content: space-between;
   }
   .banner-container,
-  .standard-curriculum-allcontainer{
+  .standard-curriculum-allcontainer {
     flex-direction: column-reverse;
   }
 
@@ -385,7 +628,7 @@ main > section {
   .banner-info button {
     margin: 0px auto;
   }
-  .curriculum-header{
+  .curriculum-header {
     font-size: 1.625rem;
     font-weight: 700;
     line-height: 2.0625rem;
@@ -394,5 +637,10 @@ main > section {
   }
   .standard-curriculum-allcontainer {
     margin: 0 15px;
+  }
+  .standard-curriculum-container {
+    height: auto;
+    background: url("../assets/bg.png") no-repeat center center;
+    background-size: contain;
   }
 }
