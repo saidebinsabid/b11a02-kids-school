@@ -168,11 +168,10 @@ main #standard-curriculum {
   background-repeat: no-repeat;
 }
 
-.standard-curriculum-allcontainer {
+.standard-curriculum-inner-container {
   max-width: 1160px;
-  margin: 100px auto;
-  align-items: center;
-  gap: 30px;
+  margin: 0px auto;
+  text-align: center;
 }
 
 /* Header with marquee tag style */
@@ -198,6 +197,11 @@ main #standard-curriculum {
   height: 100px;
   position: relative;
   text-align: center;
+}
+
+.standard-curriculum-allcontainer {
+  margin-top: 80px;
+  gap: 30px;
 }
 
 .curriculum1 {
@@ -299,7 +303,7 @@ main #standard-curriculum {
 .next-button {
   gap: 10px;
   justify-content: center;
-  margin-bottom: 60px;
+  margin: 70px 0px;
 }
 .curriculum3-span {
   color: rgb(135, 0, 255);
@@ -327,13 +331,13 @@ main #standard-curriculum {
 }
 .arrow-left img {
   position: relative;
-  left: 22.5px;
+  left: 3px;
   top: 17px;
 }
 
 .arrow-right img {
   position: relative;
-  left: 22.5px;
+  left: -3px;
   top: 17px;
 }
 .stories-container {
@@ -763,13 +767,16 @@ img {
       transform: translate(-50%, 0);
     }
   }
-  .standard-curriculum-allcontainer {
-    margin: 0 15px;
+
+  .curriculum1,
+  .curriculum2,
+  .curriculum3,
+  .curriculum4 {
+    margin: 0 auto;
   }
   .standard-curriculum-container {
-    height: auto;
     background: url("../assets/bg.png") no-repeat center center;
-    background-size: contain;
+    background-position: center;
   }
   .stories-container {
     background: url("../assets/bg.png") no-repeat center center,
