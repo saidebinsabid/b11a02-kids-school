@@ -8,8 +8,7 @@
   display: flex;
 }
 
-main > section {
-  /* max-width: 1160px; */
+main #standard-curriculum{
   margin: 100px auto;
 }
 
@@ -175,16 +174,56 @@ main > section {
   align-items: center;
   gap: 30px;
 }
+
+
 .curriculum-header {
-  color: rgb(0, 0, 0);
+  position: absolute;
   font-family: Quicksand;
-  font-size: 2.8rem;
+  font-size: 2rem;
   font-weight: 700;
-  line-height: 3.6rem;
   letter-spacing: 0%;
-  text-align: center;
-  padding-top: 60px;
+  white-space: nowrap; 
+  animation: animation-downfall-left-right 3s ease-in-out infinite;
+  animation-delay: 6s;
+
+  left: 50%; 
+  top: 50%; 
+  transform: translate(-50%, -50%); 
 }
+
+.marquee-animation{
+  overflow: hidden;
+  width: 100%;
+  height: 100px;
+  position: relative;
+  text-align: center;
+}
+
+@keyframes animation-downfall-left-right {
+  0% {
+      transform: translate(-50%, -200px); 
+      opacity: 0; 
+  }
+  10% {
+      transform: translate(-50%, 0); 
+      opacity: 1; 
+  }
+  30% {
+      transform: translate(-150%, 0); 
+  }
+  50% {
+      transform: translate(50%, 0); 
+  }
+  70% {
+      transform: translate(-50%, 0); 
+  }
+  100% {
+      transform: translate(-50%, 0); 
+  }
+}
+
+
+
 
 .curriculum1 {
   width: 367.8px;
@@ -531,6 +570,86 @@ img {
   margin-top: 80px;
   margin-bottom: 60px;
 }
+.foot-container{
+background: rgb(1, 173, 253);
+}
+
+.foot-inner{
+  max-width: 1160px;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.foot-div1{
+  width: 399.02px;
+  margin-top: 130px;
+  margin-bottom: 130px;
+}
+.foot-div1-header{
+  color: rgb(255, 255, 255);
+  font-family: Quicksand;
+  font-size: 2.6rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  letter-spacing: 0%;
+  padding-left: 10px;
+}
+
+.foot-div1-paragraph{
+  color: rgb(255, 255, 255);
+  font-family: Quicksand;
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.56rem;
+  letter-spacing: 0%;
+  padding-top: 35px;
+}
+.foot-div2, .foot-div3{
+  margin-top: 130px;
+  margin-bottom: 130px;
+}
+.foot-div2-header{
+  color: rgb(255, 255, 255);
+  font-family: Quicksand;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.87rem;
+  letter-spacing: 0%;
+  padding-bottom: 30px;
+}
+.foot-div2 ul{
+  padding-left: 0px;
+}
+
+.list-ite{
+  list-style: none;
+  margin-bottom: 20px;
+}
+.list-li{
+  text-decoration: none;
+
+  color: rgb(255, 255, 255);
+  font-family: Quicksand;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.56rem;
+  letter-spacing: 0%;
+}
+
+.foot-div3-header{
+  color: rgb(255, 255, 255);
+  font-family: Quicksand;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 26px;
+  letter-spacing: 0%;
+  padding-bottom: 32px;
+}
+
+.foot-div3 img{
+  margin-right: 10px;
+}
+
 .hide {
   display: none;
 }
@@ -559,7 +678,7 @@ img {
     justify-content: space-between;
   }
   .banner-container,
-  .standard-curriculum-allcontainer {
+  .standard-curriculum-allcontainer{
     flex-direction: column-reverse;
   }
 
@@ -610,11 +729,19 @@ img {
     margin: 0px auto;
   }
   .curriculum-header {
+    position: absolute;
     font-size: 2rem;
     font-weight: 700;
     line-height: 2.0625rem;
     letter-spacing: 0%;
     margin-bottom: 20px;
+    white-space: nowrap; 
+  animation: animation-downfall-left-right 3s ease-in-out infinite;
+  animation-delay: 6s;
+
+    left: 50%; 
+  top: 50%; 
+  transform: translate(-50%, -50%);
   }
   .standard-curriculum-allcontainer {
     margin: 0 15px;
@@ -658,12 +785,18 @@ img {
 
   .short-story-paragraph1,
   .short-story-paragraph2,
-  .short-story-paragraph3,
   .short-story-paragraph4 {
     font-size: 0.85rem;
     font-weight: 700;
     line-height: 2rem;
     padding: 0px 15px;
+  }
+
+  .short-story-paragraph3{
+    font-size: 0.85rem;
+    font-weight: 700;
+    line-height: 2rem;
+    padding: 0px 0px 0px 15px;
   }
 
   #short-story-btn1 {
@@ -697,5 +830,30 @@ img {
   .btn-view {
     margin-top: 20px;
     margin-bottom: 40px;
+  }
+
+  .foot-inner{
+    flex-direction: column;
+  }
+  .foot-div1{
+    margin-top: 60px;
+    margin-left: 20px;
+    margin-bottom: 0px;
+  }
+  .foot-div2{
+    margin-bottom: 0px;
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+  .foot-div3{
+    margin-top: 30px;
+    margin-bottom: 60px;
+    margin-left: 20px;
+  }
+  .foot-div2-header{
+    padding-left: 0px;
+  }
+  .foot-div2 ul{
+    padding-left: 0px;
   }
 }
