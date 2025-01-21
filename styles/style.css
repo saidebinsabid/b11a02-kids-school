@@ -651,9 +651,7 @@ img {
     transform: translate(-50%, 0);
   }
 }
-.hide {
-  display: none;
-}
+
 @media screen and (max-width: 576px) {
   .nav-link,
   .btn-contact,
