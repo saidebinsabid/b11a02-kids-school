@@ -626,7 +626,9 @@ img {
 .foot-div3 {
   margin: 130px 0px;
 }
-
+.hide {
+  display: none;
+}
 /* Standard Curriculum animation */
 @keyframes animation-downfall-left-right {
   0% {
