@@ -8,7 +8,7 @@
   display: flex;
 }
 
-main #standard-curriculum{
+main #standard-curriculum {
   margin: 100px auto;
 }
 
@@ -175,30 +175,30 @@ main #standard-curriculum{
   gap: 30px;
 }
 
-
+/* Header with marquee tag style */
 .curriculum-header {
   position: absolute;
   font-family: Quicksand;
-  font-size: 2rem;
+  font-size: 2.875rem;
   font-weight: 700;
   letter-spacing: 0%;
-  white-space: nowrap; 
+  white-space: nowrap;
   animation: animation-downfall-left-right 3s ease-in-out infinite;
   animation-delay: 6s;
 
-  left: 50%; 
-  top: 50%; 
-  transform: translate(-50%, -50%); 
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }
 
-.marquee-animation{
+/* marquee-class style */
+.marquee-animation {
   overflow: hidden;
   width: 100%;
   height: 100px;
   position: relative;
   text-align: center;
 }
-
 
 .curriculum1 {
   width: 367.8px;
@@ -545,22 +545,22 @@ img {
   margin-bottom: 60px;
 }
 
-.foot-container{
+.foot-container {
   background: rgb(1, 172, 253);
 }
 
-.foot-inner{
+.foot-inner {
   max-width: 1160px;
   margin: 0px auto;
   justify-content: space-between;
 }
 
-.foot-div1{
+.foot-div1 {
   width: 399.02px;
   margin: 130px 0px;
 }
 
-.foot-div1-header{
+.foot-div1-header {
   color: rgb(255, 255, 255);
   font-family: Quicksand;
   font-size: 2.6rem;
@@ -570,7 +570,7 @@ img {
   padding-left: 10px;
 }
 
-.foot-div1-paragraph{
+.foot-div1-paragraph {
   color: rgb(255, 255, 255);
   font-family: Quicksand;
   font-size: 1.25rem;
@@ -580,7 +580,7 @@ img {
   padding-top: 35px;
 }
 
-.foot-div2-header{
+.foot-div2-header {
   color: rgb(255, 255, 255);
   font-family: Quicksand;
   font-size: 1.5rem;
@@ -590,11 +590,11 @@ img {
   padding-bottom: 30px;
 }
 
-.list-ite{
+.list-ite {
   list-style: none;
   margin-bottom: 20px;
 }
-.list-li{
+.list-li {
   text-decoration: none;
 
   color: rgb(255, 255, 255);
@@ -604,11 +604,11 @@ img {
   line-height: 1.56rem;
   letter-spacing: 0%;
 }
-.foot-div2 ul{
+.foot-div2 ul {
   padding-left: 0px;
 }
 
-.foot-div3-header{
+.foot-div3-header {
   color: rgb(255, 255, 255);
   font-family: Quicksand;
   font-size: 26px;
@@ -618,36 +618,37 @@ img {
   padding-bottom: 32px;
 }
 
-.foot-div3 img{
+.foot-div3 img {
   margin-right: 10px;
 }
-.foot-div2, .foot-div3{
+.foot-div2,
+.foot-div3 {
   margin: 130px 0px;
 }
 
-
+/* Standard Curriculum animation */
 @keyframes animation-downfall-left-right {
   0% {
-      transform: translate(-50%, -200px); 
-      opacity: 0; 
+    transform: translate(-50%, -200px);
+    opacity: 0;
   }
   10% {
-      transform: translate(-50%, 0); 
-      opacity: 1; 
+    transform: translate(-50%, 0);
+    opacity: 1;
   }
   30% {
-      transform: translate(-150%, 0);
-       color: rgb(254, 163, 1);
+    transform: translate(-150%, 0);
+    color: rgb(254, 163, 1);
   }
   50% {
-      transform: translate(50%, 0); 
-      color: rgb(1, 172, 253);
+    transform: translate(50%, 0);
+    color: rgb(1, 172, 253);
   }
   70% {
-      transform: translate(-50%, 0); 
+    transform: translate(-50%, 0);
   }
   100% {
-      transform: translate(-50%, 0); 
+    transform: translate(-50%, 0);
   }
 }
 .hide {
@@ -678,7 +679,7 @@ img {
     justify-content: space-between;
   }
   .banner-container,
-  .standard-curriculum-allcontainer{
+  .standard-curriculum-allcontainer {
     flex-direction: column-reverse;
   }
 
@@ -739,28 +740,28 @@ img {
 
   @keyframes mobile-marquee-animation {
     0% {
-      transform: translate(-50%, -200px); 
-      opacity: 0; 
-  }
-  10% {
-      transform: translate(-50%, 0); 
-      opacity: 1; 
-  }
-  30% {
+      transform: translate(-50%, -200px);
+      opacity: 0;
+    }
+    10% {
+      transform: translate(-50%, 0);
+      opacity: 1;
+    }
+    30% {
       transform: translate(-75%, 0);
       color: rgb(254, 163, 1);
-  }
-  50% {
+    }
+    50% {
       transform: translate(-25%, 0);
-      color: rgb(1, 172, 253); 
+      color: rgb(1, 172, 253);
+    }
+    70% {
+      transform: translate(-50%, 0);
+    }
+    100% {
+      transform: translate(-50%, 0);
+    }
   }
-  70% {
-      transform: translate(-50%, 0); 
-  }
-  100% {
-      transform: translate(-50%, 0); 
-  }
-}
   .standard-curriculum-allcontainer {
     margin: 0 15px;
   }
@@ -810,7 +811,7 @@ img {
     padding: 0px 15px;
   }
 
-  .short-story-paragraph3{
+  .short-story-paragraph3 {
     font-size: 0.85rem;
     font-weight: 700;
     line-height: 2rem;
@@ -850,38 +851,37 @@ img {
     margin-bottom: 40px;
   }
 
-  .foot-container{
+  .foot-container {
     width: 100%;
   }
 
-  .foot-inner{
+  .foot-inner {
     flex-direction: column;
   }
 
   .logo-footer,
-  .foot-inner{
+  .foot-inner {
     width: 90%;
   }
-  .foot-div1{
+  .foot-div1 {
     width: 90%;
     margin: 0px;
     padding-top: 65px;
   }
-  .foot-div1-header{
+  .foot-div1-header {
     padding-left: 10px;
   }
-  .foot-div1-paragraph{
+  .foot-div1-paragraph {
     padding-top: 20px;
   }
   .foot-div2,
-  .foot-div3{
+  .foot-div3 {
     width: 90%;
     margin: 30px 0px;
   }
-  .foot-div1-paragraph{
+  .foot-div1-paragraph {
     width: 99%;
     font-size: 1rem;
     line-height: 1.25rem;
-  
   }
 }
